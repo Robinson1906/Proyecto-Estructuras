@@ -1,14 +1,18 @@
 <resources>
     <string name="app_name">HorarioCheck</string>
-    <string name="txt_btnDiseñar">Editar Horarios</string>
-    <string name="txt_btnVer">Ver Horarios</string>
+    <string name="txt_btnCrearClase">Crear Curso</string>
+    <string name="txt_btnVer">Ver Cursos</string>
     <string name="txt_bienvenida">Bienvenido!</string>
     <string name="txt_Salida">¿Seguro que desea salir?</string>
-    <string name="txt_HoraInicio">Hora Inicial*</string>
-    <string name="txt_HoraFin">Hora Final*</string>
-    <string name="Sabado">Sábado</string>
-    <string name="Domingo">Domingo</string>
+    <string name="numClases">Numero de Clases</string>
+    <string name="numEstudiantes">Numero de Estudiantes</string>
+    <string name="grado">Grado</string>
+
     <string name="textoObligatorio">Debe ingresar los campos obligatorios</string>
     <string name="aggHorario">Agregar Horario</string>
+    <string name="registroClase">Registrar clase</string>
+    <string name="materia">Materia</string>
+    <string name="llenar_Asistencia">Llenar Asistencias</string>
+    <string name="informe">Crear Informe</string>
 
 </resources>
