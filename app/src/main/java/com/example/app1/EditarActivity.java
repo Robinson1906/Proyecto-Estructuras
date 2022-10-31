@@ -16,7 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class EditarActivity extends AppCompatActivity {
     EditText txtMateria,txtClases,txtGrado,txtAcceso;
     Button btnGuardar;
-    FloatingActionButton fabEditar;
+    FloatingActionButton fabEditar,fabBorrar;
     Curso curso;
 
     boolean correcto=false;
@@ -31,6 +31,7 @@ public class EditarActivity extends AppCompatActivity {
         txtGrado=findViewById(R.id.txtGrad);
         btnGuardar=findViewById(R.id.btnGuardar);
         fabEditar=findViewById(R.id.fabEditar);
+        fabBorrar=findViewById(R.id.fabBorrar);
 
 
         //Espacio para lo de estudiantes
@@ -56,6 +57,7 @@ public class EditarActivity extends AppCompatActivity {
             txtGrado.setText(curso.getGrado());
         }
         fabEditar.setVisibility(View.INVISIBLE);
+        fabBorrar.setVisibility(View.INVISIBLE);
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

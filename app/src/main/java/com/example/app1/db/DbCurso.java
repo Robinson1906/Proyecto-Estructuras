@@ -129,4 +129,25 @@ public class DbCurso extends DbHelperCursos {
         return correcto;
 
     }
+    public boolean borrarCurso(int id){
+
+        boolean correcto=false;
+
+        DbHelperCursos dbHelper = new DbHelperCursos(context, name, version);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try {
+            db.execSQL("DELETE FROM "+Tabla_Cursos+" WHERE id = '"+id+"' ");
+            correcto=true;
+        }
+        catch (Exception x){
+            x.toString();
+            correcto=false;
+        }finally {
+            db.close();
+        }
+
+        return correcto;
+
+    }
 }
